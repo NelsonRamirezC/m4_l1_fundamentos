@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+        let nombre = prompt("Ingresa tu nombre.");
+
+        let edad = prompt(`${nombre}, ahora ingresa tu edad.`);
+
+        edad = Number(edad); // convertimos la edad (string) en edad (number)
+
+        if(isNaN(edad)){
+            alert(`${nombre}, la edad ingresada no corresponde, vuelva a intentar.`);
+        }else{
+
+            if(edad >= 18){
+                alert(`${nombre}, bienvenido a la web.`);
+            }else {
+                let edadFaltante = 18 - edad;
+                alert(`${nombre}, lo lamentamos, usted no tiene la edad suficiente.\nTe faltan ${edadFaltante} años.`);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>
